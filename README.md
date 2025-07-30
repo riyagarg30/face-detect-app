@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# Face Detection App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive web application built with **React**, **TypeScript**, and **Bootstrap** that captures webcam image feeds, performs face detection and recognition using **face-api.js**, and displays identified attributes (name, gender, age). Users can also upload images for detection.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+*  Live webcam feed capture using `MediaDevices.getUserMedia()`
+*  Facial recognition using `face-api.js` (based on TensorFlow\.js)
+*  Face detection overlays with bounding boxes
+*  Displays attributes: **Name**, **Gender**, **Age**
+*  Upload image from device and perform detection
+*  Detects **multiple faces** in an image
 
-### `npm start`
+## Bonus Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+*  Image upload and face detection
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+* **Frontend Framework**: React
+* **Language**: TypeScript
+* **Face Recognition**: face-api.js (TensorFlow\.js-based)
+* **Styling**: Custom CSS
+* **Deployment**: \[https://riyagarg30.github.io/face-detect-app/]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📦 Installation
 
-### `npm run build`
+```bash
+git clone https://github.com/riyagarg30/face-detect-app.git
+cd face-detect-app
+npm install
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🌐 Live Demo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+\[https://riyagarg30.github.io/face-detect-app/]
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧪 Architecture Overview
 
-### `npm run eject`
+* `App.tsx`: Entry point rendering the main component
+* `WebcamFaceCapture.tsx`: Captures webcam feed and processes images
+* `faceApiService.ts`: Loads face-api.js models and performs detection
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🧠 Model
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Uses **pre-trained models** (`tiny_face_detector`, `age_gender`, `face_landmark_68`, `face_recognition`) from face-api.js
+* Models loaded asynchronously and cached in memory
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
