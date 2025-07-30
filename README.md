@@ -21,7 +21,7 @@ A responsive web application built with **React**, **TypeScript**, and **Bootstr
 * **Language**: TypeScript
 * **Face Recognition**: face-api.js (TensorFlow\.js-based)
 * **Styling**: Custom CSS
-* **Deployment**: \[https://riyagarg30.github.io/face-detect-app/]
+* **Deployment**: \[ https://riyagarg30.github.io/face-detect-app/ ]
 
 ## 📦 Installation
 
@@ -34,7 +34,7 @@ npm start
 
 ## 🌐 Live Demo
 
-\[https://riyagarg30.github.io/face-detect-app/]
+\[ https://riyagarg30.github.io/face-detect-app/ ]
 
 ## 🧪 Architecture Overview
 
