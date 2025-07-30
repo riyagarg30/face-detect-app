@@ -1,0 +1,111 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  color: #222;
+  /* height: 100vh; */
+}
+
+/* App layout */
+.app-container {
+  text-align: center;
+  /* margin-left: -7rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 2rem; */
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #1f2937;
+}
+
+/* Webcam / Canvas */
+video,
+canvas {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+/* Buttons */
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* File input */
+input[type="file"] {
+  margin-left: 1rem;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 90vw;
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+
+/* Modal form inputs */
+.modal-content input[type="text"],
+.modal-content input[type="number"] {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  margin-top: 1rem;
+}
